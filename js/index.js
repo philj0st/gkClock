@@ -1,6 +1,9 @@
 
 var Clock = (function(){
 
+	//global for start date
+	var start = new Date(2015,02,28);
+
 	var exports = function(element) {
 		this._element = element;
 		var html = '';
@@ -13,9 +16,10 @@ var Clock = (function(){
 	};
 
 	exports.prototype = {
-
+		//var gkTime = new Date(+start + (+now - +start) * 0.8)
 		_tick:function() {
-			var time = new Date();
+			var now = new Date()
+			var time = new Date(+start + (+now - +start)*(24/26));
 			this._update(this._pad(time.getHours()) + this._pad(time.getMinutes()) + this._pad(time.getSeconds()));
 			var self = this;
 			setTimeout(function(){
