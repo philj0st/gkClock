@@ -2,8 +2,8 @@
 var Clock = (function(){
 
 	//settings
-	var start = new Date(2015,02,28);
-	var factor = (24/26);
+	var start = new Date(2015,02,29,11);
+	var factor = (5/6);
 
 	var exports = function(element) {
 		this._element = element;
