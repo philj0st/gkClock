@@ -22,10 +22,12 @@ var Clock = (function(){
 			var now = new Date()
 			var time = new Date(+start + (+now - +start)* factor);
 			this._update(this._pad(time.getHours()) + this._pad(time.getMinutes()) + this._pad(time.getSeconds()));
+			//update day
+			document.body.children[0].innerHTML = time.toDateString();
 			var self = this;
 			setTimeout(function(){
 				self._tick();
-			},1000);
+			},200);
 		},
 
 		_pad:function(value) {
