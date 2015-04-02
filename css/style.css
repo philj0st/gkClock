@@ -21,6 +21,12 @@ h2 {
 	margin-top:2em;
 }
 
+img{
+    max-width:100% !important;
+    height:auto;
+    display:block;
+}
+
 .clock {
 	position:relative;
 	font-family:monaco,consolas,"courier new",monospace;
