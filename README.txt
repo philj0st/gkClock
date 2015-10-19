@@ -1,3 +1,5 @@
+Created this clock for a 5 day camp where a day had 6/5*24 Hours -> actually 6 days
+
 A Pen created at CodePen.io. You can find this one at http://codepen.io/phipix01/pen/wBZoao.
 
  A flip clock, you could easily add other animations by adjusting the CSS.
